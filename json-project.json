@@ -1,0 +1,424 @@
+{
+  "data": {
+    
+"Teacher": [
+  {
+    "first_name": "Anna",
+    "second_name": "Smith",
+    "birthday": "1980-05-15",
+    "jmbg": "1505980000010",
+    "address": "123 Main St",
+    "subject": "Mathematics",
+    "teacher_id": "T1"
+  },
+  {
+    "first_name": "Ben",
+    "second_name": "Jones",
+    "birthday": "1975-11-20",
+    "jmbg": "2011975000020",
+    "address": "456 Oak Ave",
+    "subject": "Physics",
+    "teacher_id": "T2"
+  },
+  {
+    "first_name": "Carla",
+    "second_name": "Davis",
+    "birthday": "1990-03-01",
+    "jmbg": "0103990000030",
+    "address": "789 Pine Ln",
+    "subject": "Chemistry",
+    "teacher_id": "T3"
+  },
+  {
+    "first_name": "David",
+    "second_name": "Miller",
+    "birthday": "1985-07-25",
+    "jmbg": "2507985000040",
+    "address": "101 Elm Rd",
+    "subject": "History",
+    "teacher_id": "T4"
+  }
+],
+    
+
+"Student": [
+  {
+    "first_name": "Ema", 
+    "second_name": "Wilson", 
+    "birthday": "2005-01-10", 
+    "jmbg": "1001005000110", 
+    "address": "201 Bay St", 
+    "index_number": "2023-001", 
+    "student_id": "S1"
+  },
+  {
+    "first_name": "Fred", 
+    "second_name": "Garcia", 
+    "birthday": "2005-02-15", 
+    "jmbg": "1502005000210", 
+    "address": "202 Bay St", 
+    "index_number": "2023-002", 
+    "student_id": "S2"
+  },
+  {
+    "first_name": "Gina", 
+    "second_name": "Rodriguez", 
+    "birthday": "2005-03-20", 
+    "jmbg": "2003005000310", 
+    "address": "203 Bay St", 
+    "index_number": "2023-003", 
+    "student_id": "S3"
+  },
+  {
+    "first_name": "Hugh", 
+    "second_name": "Lee", 
+    "birthday": "2005-04-25", 
+    "jmbg": "2504005000410", 
+    "address": "204 Bay St", 
+    "index_number": "2023-004", 
+    "student_id": "S4"
+  },
+  {
+    "first_name": "Iris", 
+    "second_name": "Chen", 
+    "birthday": "2005-05-30", 
+    "jmbg": "3005005000510", 
+    "address": "205 Bay St", 
+    "index_number": "2023-005", 
+    "student_id": "S5"
+  },
+  {
+    "first_name": "Jack", 
+    "second_name": "Martinez", 
+    "birthday": "2005-06-05", 
+    "jmbg": "0506005000610", 
+    "address": "206 Bay St", 
+    "index_number": "2023-006", 
+    "student_id": "S6"
+  },
+  {
+    "first_name": "Kelly", 
+    "second_name": "Hernandez", 
+    "birthday": "2005-07-10", 
+    "jmbg": "1007005000710", 
+    "address": "207 Bay St", 
+    "index_number": "2023-007", 
+    "student_id": "S7"
+  },
+  {
+    "first_name": "Leo", 
+    "second_name": "Lopez", 
+    "birthday": "2005-08-15", 
+    "jmbg": "1508005000810", 
+    "address": "208 Bay St", 
+    "index_number": "2023-008", 
+    "student_id": "S8"
+  },
+  {
+    "first_name": "Mia", 
+    "second_name": "Gonzalez", 
+    "birthday": "2005-09-20", 
+    "jmbg": "2009005000910", 
+    "address": "209 Bay St", 
+    "index_number": "2023-009", 
+    "student_id": "S9"
+  },
+  {
+    "first_name": "Nathan", 
+    "second_name": "Perez", 
+    "birthday": "2005-10-25", 
+    "jmbg": "2510005001010", 
+    "address": "210 Bay St", 
+    "index_number": "2023-010", 
+    "student_id": "S10"
+  },
+  {
+    "first_name": "Olivia", 
+    "second_name": "Scott", 
+    "birthday": "2006-01-01", 
+    "jmbg": "0101006001110", 
+    "address": "301 Hill Rd", 
+    "index_number": "2023-011", 
+    "student_id": "S11"
+  },
+  {
+    "first_name": "Paul", 
+    "second_name": "Adams", 
+    "birthday": "2006-02-06", 
+    "jmbg": "0602006001210", 
+    "address": "302 Hill Rd", 
+    "index_number": "2023-012", 
+    "student_id": "S12"
+  },
+  {
+    "first_name": "Quinn", 
+    "second_name": "Baker", 
+    "birthday": "2006-03-11", 
+    "jmbg": "1103006001310", 
+    "address": "303 Hill Rd", 
+    "index_number": "2023-013", 
+    "student_id": "S13"
+  },
+  {
+    "first_name": "Ryan", 
+    "second_name": "Carter", 
+    "birthday": "2006-04-16", 
+    "jmbg": "1604006001410", 
+    "address": "304 Hill Rd", 
+    "index_number": "2023-014", 
+    "student_id": "S14"
+  },
+  {
+    "first_name": "Sofia", 
+    "second_name": "Dixon", 
+    "birthday": "2006-05-21", 
+    "jmbg": "2105006001510", 
+    "address": "305 Hill Rd", 
+    "index_number": "2023-015", 
+    "student_id": "S15"
+  },
+  {
+    "first_name": "Tom", 
+    "second_name": "Evans", 
+    "birthday": "2006-06-26", 
+    "jmbg": "2606006001610", 
+    "address": "306 Hill Rd", 
+    "index_number": "2023-016", 
+    "student_id": "S16"
+  },
+  {
+    "first_name": "Uma", 
+    "second_name": "Fisher", 
+    "birthday": "2006-07-31", 
+    "jmbg": "3107006001710", 
+    "address": "307 Hill Rd", 
+    "index_number": "2023-017", 
+    "student_id": "S17"
+  },
+  {
+    "first_name": "Vince", 
+    "second_name": "Green", 
+    "birthday": "2006-08-05", 
+    "jmbg": "0508006001810", 
+    "address": "308 Hill Rd", 
+    "index_number": "2023-018", 
+    "student_id": "S18"
+  },
+  {
+    "first_name": "Wendy", 
+    "second_name": "Hall", 
+    "birthday": "2006-09-10", 
+    "jmbg": "1009006001910", 
+    "address": "309 Hill Rd", 
+    "index_number": "2023-019", 
+    "student_id": "S19"
+  },
+  {
+    "first_name": "Xander", 
+    "second_name": "Jones", 
+    "birthday": "2006-10-15", 
+    "jmbg": "1510006002010", 
+    "address": "310 Hill Rd", 
+    "index_number": "2023-020", 
+    "student_id": "S20"
+  }
+],
+
+
+"Student_in_class": [
+      {
+        "class_id": "C1",
+        "student_id": "S1",
+        "teacher_id": "T1"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S2",
+        "teacher_id": "T1"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S3",
+        "teacher_id": "T1"
+      }
+      ,
+      {
+        "class_id": "C1",
+        "student_id": "S4",
+        "teacher_id": "T1"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S5",
+        "teacher_id": "T1"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S6",
+        "teacher_id": "T1"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S7",
+        "teacher_id": "T1"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S8",
+        "teacher_id": "T1"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S9",
+        "teacher_id": "T1"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S10",
+        "teacher_id": "T1"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S11",
+        "teacher_id": "T2"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S12",
+        "teacher_id": "T2"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S13",
+        "teacher_id": "T2"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S14",
+        "teacher_id": "T2"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S15",
+        "teacher_id": "T2"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S16",
+        "teacher_id": "T2"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S17",
+        "teacher_id": "T2"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S18",
+        "teacher_id": "T2"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S19",
+        "teacher_id": "T2"
+      },
+      {
+        "class_id": "C1",
+        "student_id": "S20",
+        "teacher_id": "T2"
+      }
+    ],
+
+
+"Class": [
+  {
+    "class_name": "Grade 10-A",
+    "class_id": "C1"
+  },
+  {
+    "class_name": "Grade 10-B",
+    "class_id": "C2"
+  }
+],
+    
+
+"Grade_in_class": [
+  {
+    "class_id": "C1",
+    "student_id": "S1",
+    "teacher_id": "T1",
+    "grade_value": "5",
+    "created_at": "2025-10-01"
+  },
+  {
+    "class_id": "C1",
+    "student_id": "S1",
+    "teacher_id": "T2",
+    "grade_value": "4",
+    "created_at": "2025-10-15"
+  },
+  {
+    "class_id": "C1",
+    "student_id": "S1",
+    "teacher_id": "T4",
+    "grade_value": "5",
+    "created_at": "2025-11-05"
+  },
+  {
+    "class_id": "C1",
+    "student_id": "S3",
+    "teacher_id": "T3",
+    "grade_value": "4",
+    "created_at": "2025-11-10"
+  },
+  {
+    "class_id": "C1",
+    "student_id": "S4",
+    "teacher_id": "T1",
+    "grade_value": "3",
+    "created_at": "2025-09-20"
+  },
+  {
+    "class_id": "C1",
+    "student_id": "S4",
+    "teacher_id": "T2",
+    "grade_value": "5",
+    "created_at": "2025-10-25"
+  },
+  {
+    "class_id": "C2",
+    "student_id": "S11",
+    "teacher_id": "T4",
+    "grade_value": "4",
+    "created_at": "2025-09-15"
+  },
+  {
+    "class_id": "C2",
+    "student_id": "S11",
+    "teacher_id": "T1",
+    "grade_value": "5",
+    "created_at": "2025-11-20"
+  }
+],
+
+
+"Subject": [
+    {
+      "teacher_id": "T1",
+      "subject_name": "Mathematics"
+    },
+    {
+      "teacher_id": "T2",
+      "subject_name": "Physics"
+    },
+    {
+      "teacher_id": "T3",
+      "subject_name": "Chemistry"
+    },
+    {
+      "teacher_id": "T4",
+      "subject_name": "History"
+    }
+]
+  }
+}
