@@ -84,3 +84,6 @@ class Subject(Base):
     def __repr__(self):
         return f"Subject (id = {self.id}, teacher_id = {self.teacher_id}, subject_name = {self.subject_name})"
 
+
+
+#adding like smth
