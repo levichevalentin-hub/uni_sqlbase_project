@@ -1,41 +1,22 @@
+from datetime import datetime
 import json
 from pathlib import Path
 
-from sqlalchemy import func, create_engine, Column, Integer, String, Date, select
-from sqlalchemy.orm import DeclarativeBase, sessionmaker
+from sqlalchemy import create_engine, Column, Integer, String, Date, select
+from sqlalchemy.orm import sessionmaker
 
+from sql_engine import display_table, load_table
 
-class Base(DeclarativeBase):
-    pass
+import os
+import sys
 
-class Teacher(Base):
-    __tablename__ = "Teacher"
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.join(current_dir, "..")
+sys.path.append(project_root)
 
-    id = Column(Integer, primary_key=True)
-    first_name = Column(String, nullable=False)
-    second_name = Column(String, nullable=False)
-    birthday = Column(Date, nullable=False)
-    jmbg = Column(Integer, nullable=False)
-    adress = Column(String, nullable=False)
-    subject = Column(String, nullable = False)
+from database.tables.student import Student
+from database.tables.base import Base
 
-    def __repr__(self):
-        return f"Teacher (id = {self.id}, first_name = {self.first_name}, second_name = {self.second_name}, birthday = {self.birthday},  jmbg = {self.jmbg}, adress = {self.adress}, subject = {self.subject})"
-
-class Student(Base):
-    __tablename__ = "Student"
-
-    id = Column(Integer, primary_key=True)
-    first_name = Column(String, nullable=False)
-    second_name = Column(String, nullable=False)
-    birthday = Column(Date, nullable=False)
-    jmbg = Column(Integer, nullable=False)
-    adress = Column(String, nullable=False)
-    index_number = Column(Integer, nullable=False)
-
-    def __repr__(self):
-        return f"Student (id = {self.id}, first_name = {self.first_name}, second_name = {self.second_name}, birthday = {self.birthday},  jmbg = {self.jmbg}, adress = {self.adress}, index_number = {self.index_number})"
-    
 class Student_in_class(Base):
     __tablename__ = "Student_in_class"
 
@@ -47,17 +28,17 @@ class Student_in_class(Base):
     def __repr__(self):
         return f"Student_in_class (id = {self.id}, class_id = {self.class_id}, student_id = {self.student_id}, teacher_idteacher_id = {self.teacher_id})"
 
-class Class(Base):
-    __tablename__ = "Class"
+# class Class(Base):
+#     __tablename__ = "Class"
 
-    id = Column(Integer, primary_key=True)
-    class_name = Column(String, nullabe=False)
-    teacher_id = Column(Integer, nullable=False)
-    student_id = Column(Integer, nullable=False)
+#     id = Column(Integer, primary_key=True)
+#     class_name = Column(String, nullabe=False)
+#     teacher_id = Column(Integer, nullable=False)
+#     student_id = Column(Integer, nullable=False)
     
 
-    def __repr__(self):
-        return f"Class (id = {self.id},class_name = {self.class_name}, teacher_id = {self.teacher_id}, student_id = {self.student_id})"
+#     def __repr__(self):
+#         return f"Class (id = {self.id},class_name = {self.class_name}, teacher_id = {self.teacher_id}, student_id = {self.student_id})"
     
 class Grade_in_class(Base):
     __tablename__ = "Grade_in_class"
@@ -85,22 +66,16 @@ class Subject(Base):
         return f"Subject (id = {self.id}, teacher_id = {self.teacher_id}, subject_name = {self.subject_name})"
 
 # TODO: Properly connect database
-engine = create_engine("sqlite:///Project.db")
-Base.metadata.create_all(engine)
+engine = create_engine("sqlite:///Project11.db")
+Base.metadata.create_all(bind=engine)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-def load_table(file_path, model_class):
-    try:
-        # TODO: Write code for loaing 1 table, use session. Be careful with Date, issues may happen
-        print(f"Data for {model_class.__tablename__} has been successfully loaded.")
-    except Exception as ex:
-        print(f"Error encountered during loading {model_class.__tablename__} data!")
+load_table(session, "data/students.json", Student, datetime_fields=['birthday'])
+display_table(session, Student)
 
-def display_table(model_class):
-    # TODO: display data from a specific table, model_class = table, e.g. Teacher
-
-#adding like smth
+#teacherBen = session.query(Teacher).filter(Teacher.first_name.ilike("Ben")).all()
+#print(teacherBen)
 
 # NOTE: So far we have enough tables for initial setup. Let's proceed with business logic, afterwards we will add corresponding tables by necessity.
 
