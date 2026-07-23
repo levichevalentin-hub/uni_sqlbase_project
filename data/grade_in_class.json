@@ -1,0 +1,58 @@
+[
+      {
+        "class_id": "1",
+        "student_id": "1",
+        "teacher_id": "1",
+        "grade_value": "5",
+        "created_at": "2025-10-01"
+      },
+      {
+        "class_id": "1",
+        "student_id": "1",
+        "teacher_id": "2",
+        "grade_value": "4",
+        "created_at": "2025-10-15"
+      },
+      {
+        "class_id": "1",
+        "student_id": "1",
+        "teacher_id": "4",
+        "grade_value": "5",
+        "created_at": "2025-11-05"
+      },
+      {
+        "class_id": "1",
+        "student_id": "3",
+        "teacher_id": "3",
+        "grade_value": "4",
+        "created_at": "2025-11-10"
+      },
+      {
+        "class_id": "1",
+        "student_id": "4",
+        "teacher_id": "1",
+        "grade_value": "3",
+        "created_at": "2025-09-20"
+      },
+      {
+        "class_id": "1",
+        "student_id": "4",
+        "teacher_id": "2",
+        "grade_value": "5",
+        "created_at": "2025-10-25"
+      },
+      {
+        "class_id": "2",
+        "student_id": "11",
+        "teacher_id": "4",
+        "grade_value": "4",
+        "created_at": "2025-09-15"
+      },
+      {
+        "class_id": "2",
+        "student_id": "11",
+        "teacher_id": "1",
+        "grade_value": "5",
+        "created_at": "2025-11-20"
+      }
+    ]
