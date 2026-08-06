@@ -1,22 +1,122 @@
 [
-  { "class_name": "Grade 10-A", "teacher_id": "1", "student_id": "1" },
-  { "class_name": "Grade 10-A", "teacher_id": "1", "student_id": "2" },
-  { "class_name": "Grade 10-A", "teacher_id": "1", "student_id": "3" },
-  { "class_name": "Grade 10-A", "teacher_id": "1", "student_id": "4" },
-  { "class_name": "Grade 10-A", "teacher_id": "1", "student_id": "5" },
-  { "class_name": "Grade 10-A", "teacher_id": "2", "student_id": "6" },
-  { "class_name": "Grade 10-A", "teacher_id": "2", "student_id": "7" },
-  { "class_name": "Grade 10-A", "teacher_id": "2", "student_id": "8" },
-  { "class_name": "Grade 10-A", "teacher_id": "2", "student_id": "9" },
-  { "class_name": "Grade 10-A", "teacher_id": "2", "student_id": "10" },
-  { "class_name": "Grade 10-B", "teacher_id": "3", "student_id": "11" },
-  { "class_name": "Grade 10-B", "teacher_id": "3", "student_id": "12" },
-  { "class_name": "Grade 10-B", "teacher_id": "3", "student_id": "13" },
-  { "class_name": "Grade 10-B", "teacher_id": "3", "student_id": "14" },
-  { "class_name": "Grade 10-B", "teacher_id": "3", "student_id": "15" },
-  { "class_name": "Grade 10-B", "teacher_id": "4", "student_id": "16" },
-  { "class_name": "Grade 10-B", "teacher_id": "4", "student_id": "17" },
-  { "class_name": "Grade 10-B", "teacher_id": "4", "student_id": "18" },
-  { "class_name": "Grade 10-B", "teacher_id": "4", "student_id": "19" },
-  { "class_name": "Grade 10-B", "teacher_id": "4", "student_id": "20" }
+  {
+    "id": 1,
+    "class_name": "Grade 10-A",
+    "teacher_id": 1,
+    "student_id": 1
+  },
+  {
+    "id": 2,
+    "class_name": "Grade 10-A",
+    "teacher_id": 1,
+    "student_id": 2
+  },
+  {
+    "id": 3,
+    "class_name": "Grade 10-A",
+    "teacher_id": 1,
+    "student_id": 3
+  },
+  {
+    "id": 4,
+    "class_name": "Grade 10-A",
+    "teacher_id": 1,
+    "student_id": 4
+  },
+  {
+    "id": 5,
+    "class_name": "Grade 10-A",
+    "teacher_id": 1,
+    "student_id": 5
+  },
+  {
+    "id": 6,
+    "class_name": "Grade 10-A",
+    "teacher_id": 2,
+    "student_id": 6
+  },
+  {
+    "id": 7,
+    "class_name": "Grade 10-A",
+    "teacher_id": 2,
+    "student_id": 7
+  },
+  {
+    "id": 8,
+    "class_name": "Grade 10-A",
+    "teacher_id": 2,
+    "student_id": 8
+  },
+  {
+    "id": 9,
+    "class_name": "Grade 10-A",
+    "teacher_id": 2,
+    "student_id": 9
+  },
+  {
+    "id": 10,
+    "class_name": "Grade 10-A",
+    "teacher_id": 2,
+    "student_id": 10
+  },
+  {
+    "id": 11,
+    "class_name": "Grade 10-B",
+    "teacher_id": 3,
+    "student_id": 11
+  },
+  {
+    "id": 12,
+    "class_name": "Grade 10-B",
+    "teacher_id": 3,
+    "student_id": 12
+  },
+  {
+    "id": 13,
+    "class_name": "Grade 10-B",
+    "teacher_id": 3,
+    "student_id": 13
+  },
+  {
+    "id": 14,
+    "class_name": "Grade 10-B",
+    "teacher_id": 3,
+    "student_id": 14
+  },
+  {
+    "id": 15,
+    "class_name": "Grade 10-B",
+    "teacher_id": 3,
+    "student_id": 15
+  },
+  {
+    "id": 16,
+    "class_name": "Grade 10-B",
+    "teacher_id": 4,
+    "student_id": 16
+  },
+  {
+    "id": 17,
+    "class_name": "Grade 10-B",
+    "teacher_id": 4,
+    "student_id": 17
+  },
+  {
+    "id": 18,
+    "class_name": "Grade 10-B",
+    "teacher_id": 4,
+    "student_id": 18
+  },
+  {
+    "id": 19,
+    "class_name": "Grade 10-B",
+    "teacher_id": 4,
+    "student_id": 19
+  },
+  {
+    "id": 20,
+    "class_name": "Grade 10-B",
+    "teacher_id": 4,
+    "student_id": 20
+  }
 ]

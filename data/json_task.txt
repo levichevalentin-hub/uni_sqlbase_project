@@ -1,3 +1,0 @@
-// TODO: split file init_data.json into separate small files, e.g. teachers.json, students.json, etc.
-// Verify the correctness of created JSON files with online JSON validator.
-// Make sure the JSON is pretty formatted.

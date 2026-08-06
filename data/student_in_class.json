@@ -1,102 +1,102 @@
 [
-      {
-        "class_id": "1",
-        "student_id": "1",
-        "teacher_id": "1"
-      },
-      {
-        "class_id": "1",
-        "student_id": "2",
-        "teacher_id": "1"
-      },
-      {
-        "class_id": "1",
-        "student_id": "3",
-        "teacher_id": "1"
-      },
-      {
-        "class_id": "1",
-        "student_id": "4",
-        "teacher_id": "1"
-      },
-      {
-        "class_id": "1",
-        "student_id": "5",
-        "teacher_id": "1"
-      },
-      {
-        "class_id": "1",
-        "student_id": "6",
-        "teacher_id": "1"
-      },
-      {
-        "class_id": "1",
-        "student_id": "7",
-        "teacher_id": "1"
-      },
-      {
-        "class_id": "1",
-        "student_id": "8",
-        "teacher_id": "1"
-      },
-      {
-        "class_id": "1",
-        "student_id": "9",
-        "teacher_id": "1"
-      },
-      {
-        "class_id": "1",
-        "student_id": "10",
-        "teacher_id": "1"
-      },
-      {
-        "class_id": "1",
-        "student_id": "11",
-        "teacher_id": "2"
-      },
-      {
-        "class_id": "1",
-        "student_id": "12",
-        "teacher_id": "2"
-      },
-      {
-        "class_id": "1",
-        "student_id": "13",
-        "teacher_id": "2"
-      },
-      {
-        "class_id": "1",
-        "student_id": "14",
-        "teacher_id": "2"
-      },
-      {
-        "class_id": "1",
-        "student_id": "15",
-        "teacher_id": "2"
-      },
-      {
-        "class_id": "1",
-        "student_id": "16",
-        "teacher_id": "2"
-      },
-      {
-        "class_id": "1",
-        "student_id": "17",
-        "teacher_id": "2"
-      },
-      {
-        "class_id": "1",
-        "student_id": "18",
-        "teacher_id": "2"
-      },
-      {
-        "class_id": "1",
-        "student_id": "19",
-        "teacher_id": "2"
-      },
-      {
-        "class_id": "1",
-        "student_id": "20",
-        "teacher_id": "2"
-      }
-    ]
+  {
+    "class_id": 1,
+    "student_id": 1,
+    "teacher_id": 1
+  },
+  {
+    "class_id": 1,
+    "student_id": 2,
+    "teacher_id": 1
+  },
+  {
+    "class_id": 1,
+    "student_id": 3,
+    "teacher_id": 1
+  },
+  {
+    "class_id": 1,
+    "student_id": 4,
+    "teacher_id": 1
+  },
+  {
+    "class_id": 1,
+    "student_id": 5,
+    "teacher_id": 1
+  },
+  {
+    "class_id": 1,
+    "student_id": 6,
+    "teacher_id": 1
+  },
+  {
+    "class_id": 1,
+    "student_id": 7,
+    "teacher_id": 1
+  },
+  {
+    "class_id": 1,
+    "student_id": 8,
+    "teacher_id": 1
+  },
+  {
+    "class_id": 1,
+    "student_id": 9,
+    "teacher_id": 1
+  },
+  {
+    "class_id": 1,
+    "student_id": 10,
+    "teacher_id": 1
+  },
+  {
+    "class_id": 1,
+    "student_id": 11,
+    "teacher_id": 2
+  },
+  {
+    "class_id": 1,
+    "student_id": 12,
+    "teacher_id": 2
+  },
+  {
+    "class_id": 1,
+    "student_id": 13,
+    "teacher_id": 2
+  },
+  {
+    "class_id": 1,
+    "student_id": 14,
+    "teacher_id": 2
+  },
+  {
+    "class_id": 1,
+    "student_id": 15,
+    "teacher_id": 2
+  },
+  {
+    "class_id": 1,
+    "student_id": 16,
+    "teacher_id": 2
+  },
+  {
+    "class_id": 1,
+    "student_id": 17,
+    "teacher_id": 2
+  },
+  {
+    "class_id": 1,
+    "student_id": 18,
+    "teacher_id": 2
+  },
+  {
+    "class_id": 1,
+    "student_id": 19,
+    "teacher_id": 2
+  },
+  {
+    "class_id": 1,
+    "student_id": 20,
+    "teacher_id": 2
+  }
+]
