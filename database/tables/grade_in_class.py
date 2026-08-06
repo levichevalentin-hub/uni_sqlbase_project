@@ -1,4 +1,4 @@
-from sqlalchemy import UniqueConstraint, Column, Integer, Date, DeclarativeBase
+from sqlalchemy import UniqueConstraint, Column, Integer, Date
 
 class GradeInClass(Base):
     __tablename__ = "GradeInClass"

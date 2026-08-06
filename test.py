@@ -7,7 +7,7 @@ from sqlalchemy import create_engine, Column, Integer, String, Date, select
 from sqlalchemy.orm import sessionmaker
 
 
-from sql_engine import display_table, load_table
+from src.sql_engine import display_table, load_table
 
 from database.tables.school_class import SchoolClass
 
