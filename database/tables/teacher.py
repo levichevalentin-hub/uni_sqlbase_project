@@ -1,9 +1,7 @@
 
-from sqlalchemy import UniqueConstraint, Column, Integer, String, Date
+from sqlalchemy import UniqueConstraint, Column, Integer, String, Date, DeclarativeBase
 
-from database.tables.base import Base
-
-class Teacher(Base):
+class Teacher(DeclarativeBase):
     __tablename__ = "Teacher"
 
     id = Column(Integer, primary_key=True)

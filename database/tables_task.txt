@@ -1,2 +1,0 @@
-// TODO: move all tables (Teacher, Student, Student_in_class, etc.) into the directory src/tables.
-// 1 table = 1 file, e.g. teacher.py, student.py, student_in_class/py. etc.

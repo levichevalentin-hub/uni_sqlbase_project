@@ -15,7 +15,7 @@ def load_table(session, file_path, model_class, datetime_fields=[]):
                     for field in datetime_fields:
                         if field in item and isinstance(item[field], str):
                             item[field] = datetime.strptime(item[field], "%Y-%m-%d").date()
-                    # Создаем объект модели и добавляем в сессию
+                            
                     record = model_class(**item)
                     session.add(record)
                 

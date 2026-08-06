@@ -1,9 +1,6 @@
-from sqlalchemy import UniqueConstraint, Column, Integer, String, Date
+from sqlalchemy import UniqueConstraint, Column, Integer, String, Date, DeclarativeBase
 
-from database.tables.base import Base
-
-class Subject(Base):
-
+class Subject(DeclarativeBase):
     __tablename__ = "Subject"
 
     id = Column(Integer, primary_key=True)

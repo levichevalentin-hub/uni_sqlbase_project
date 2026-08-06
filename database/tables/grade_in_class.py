@@ -1,9 +1,7 @@
-from sqlalchemy import UniqueConstraint, Column, Integer, String, Date
-
-from database.tables.base import Base
+from sqlalchemy import UniqueConstraint, Column, Integer, Date, DeclarativeBase
 
 class GradeInClass(Base):
-    __tablename__ = "grade_in_class"
+    __tablename__ = "GradeInClass"
 
     id = Column(Integer, primary_key=True)
     class_id = Column(Integer, nullable=False)

@@ -1,8 +1,6 @@
-from sqlalchemy import Column, Integer, ForeignKey, UniqueConstraint
-from database.tables.base import Base
+from sqlalchemy import Column, Integer, ForeignKey, UniqueConstraint, DeclarativeBase
 
-
-class StudInClass(Base):
+class StudInClass(DeclarativeBase):
     __tablename__ = "StudentInClass"
 
     id = Column(Integer, primary_key=True)
