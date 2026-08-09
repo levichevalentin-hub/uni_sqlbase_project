@@ -1,9 +1,32 @@
 from datetime import datetime
 import json
 from pathlib import Path
+from sqlite3 import IntegrityError
 
-from sqlalchemy import UniqueConstraint, func, create_engine, Column, Integer, String, Date, select
-from sqlalchemy.orm import DeclarativeBase, sessionmaker
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
+from database.tables.school_class import SchoolClass
+from database.tables.student import Student
+from database.tables.teacher import Teacher
+from database.tables.subject import Subject
+from database.tables.grade_in_class import GradeInClass
+from database.tables.student_in_class import StudInClass
+
+def create_session(name="UNI_SQL.db"):
+    engine = create_engine(name)
+    Base.metadata.create_all(bind=engine)
+    Session = sessionmaker(bind=engine)
+    return Session()
+
+def creeate_tables(session):
+    # Load data from JSON files into the database
+    load_table(session, "data/students.json", Student, datetime_fields=['birthday'])
+    load_table(session, "data/school_classes.json", SchoolClass)
+    load_table(session, "data/subjects.json", Subject)
+    load_table(session, "data/students_in_classes.json", StudInClass)
+    load_table(session, "data/teachers.json", Teacher, datetime_fields=['birthday'])
+    load_table(session, "data/grades_in_classes.json", GradeInClass, datetime_fields=['created_at'])
 
 def load_table(session, file_path, model_class, datetime_fields=[]):
     try:
