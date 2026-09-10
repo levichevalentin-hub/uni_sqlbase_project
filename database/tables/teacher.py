@@ -1,5 +1,6 @@
-
 from sqlalchemy import UniqueConstraint, Column, Integer, String, Date
+
+from database.tables.base import Base
 
 class Teacher(Base):
     __tablename__ = "Teacher"

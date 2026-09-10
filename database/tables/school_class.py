@@ -1,5 +1,7 @@
 from sqlalchemy import UniqueConstraint, Column, Integer, String
 
+from database.tables.base import Base
+
 class SchoolClass(Base):
     __tablename__ = "SchoolClass"
 

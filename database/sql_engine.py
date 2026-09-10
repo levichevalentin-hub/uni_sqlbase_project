@@ -1,7 +1,5 @@
 from datetime import datetime
 import json
-from pathlib import Path
-from sqlite3 import IntegrityError
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -12,6 +10,8 @@ from database.tables.teacher import Teacher
 from database.tables.subject import Subject
 from database.tables.grade_in_class import GradeInClass
 from database.tables.student_in_class import StudInClass
+
+from database.tables.base import Base
 
 def create_session(name="UNI_SQL.db", drop_previous_db=False):
     engine = create_engine(name)

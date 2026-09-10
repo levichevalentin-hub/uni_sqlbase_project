@@ -1,5 +1,7 @@
 from sqlalchemy import Column, Integer, ForeignKey, UniqueConstraint
 
+from database.tables.base import Base
+
 class StudInClass(Base):
     __tablename__ = "StudentInClass"
 

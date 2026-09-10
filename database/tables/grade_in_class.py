@@ -1,5 +1,7 @@
 from sqlalchemy import UniqueConstraint, Column, Integer, Date
 
+from database.tables.base import Base
+
 class GradeInClass(Base):
     __tablename__ = "GradeInClass"
 

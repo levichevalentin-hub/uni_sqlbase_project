@@ -1,5 +1,7 @@
 from sqlalchemy import UniqueConstraint, Column, Integer, String, Date
 
+from database.tables.base import Base
+
 class Subject(Base):
     __tablename__ = "Subject"
 
