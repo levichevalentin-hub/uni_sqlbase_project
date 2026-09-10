@@ -13,8 +13,10 @@ from database.tables.subject import Subject
 from database.tables.grade_in_class import GradeInClass
 from database.tables.student_in_class import StudInClass
 
-def create_session(name="UNI_SQL.db"):
+def create_session(name="UNI_SQL.db", drop_previous_db=False):
     engine = create_engine(name)
+    if drop_previous_db:
+        Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
     Session = sessionmaker(bind=engine)
     return Session()
