@@ -66,3 +66,17 @@ def display_table(session, model_class):
             
     except Exception as ex:
         print(f"Error displaying {model_class.__tablename__} data! Details: {ex}")
+
+def insert_into_table(session, model_class, data):
+    try:
+        record = model_class(**data) # Вот здесь конвертируем data в объект модели для базы данных
+        session.add(record)  # Вставка сконвертированной записи в сессию, т.е. в базу данных
+
+        session.commit() # подтверждение изменений в базе данных
+        print(f"Data successfully inserted into {model_class.__tablename__}.")
+    except Exception as ex:
+        session.rollback() # откат изменений в случае ошибки
+        print(f"Error inserting data into {model_class.__tablename__}! Details: {ex}")
+
+
+# Создай функцию для поиска в SQL базе данных человека по
