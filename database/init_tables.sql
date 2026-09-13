@@ -61,3 +61,16 @@ CREATE TABLE Grade_in_class (
     grade_value INT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Идея в отделении бизнес-данных (значимых данных) от аутентификационных данных.
+-- Таблица auth будет хранить только данные для аутентификации, ссылаясь на внешние идентификаторы студентов и преподавателей.
+-- У неё нет своего собственного первичного ключа, а используется внешний идентификатор и тип сущности для уникальности.
+
+CREATE TABLE auth (
+    external_id INT NOT NULL, -- Внешний идентификатор (ссылается на Student или Teacher)
+    entity_type ENUM('student', 'teacher') NOT NULL, -- Тип сущности
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('user', 'admin') DEFAULT 'user',
+    PRIMARY KEY (external_id, entity_type) -- Композитный ключ для уникальности
+);

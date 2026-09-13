@@ -1,12 +1,12 @@
 from sqlalchemy import Column, Integer, ForeignKey, UniqueConstraint
-from database.tables.base import Base
 
+from database.tables.base import Base
 
 class StudInClass(Base):
     __tablename__ = "StudentInClass"
 
     id = Column(Integer, primary_key=True)
-    class_id = Column(Integer, ForeignKey("Class.id"), nullable=False)
+    class_id = Column(Integer, ForeignKey("SchoolClass.id"), nullable=False)
     student_id = Column(Integer, ForeignKey("Student.id"), nullable=False)
     teacher_id = Column(Integer, ForeignKey("Teacher.id"), nullable=False)
 

@@ -1,9 +1,9 @@
-from sqlalchemy import UniqueConstraint, Column, Integer, String, Date
+from sqlalchemy import UniqueConstraint, Column, Integer, String
 
 from database.tables.base import Base
 
-class Class(Base):
-    __tablename__ = "Class"
+class SchoolClass(Base):
+    __tablename__ = "SchoolClass"
 
     id = Column(Integer, primary_key=True)
     class_name = Column(String, nullable=False)
